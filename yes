@@ -1,0 +1,30 @@
+# me-messing-around-2
+Controller(0.05)
+KeyCode(char='O') 
+KeyCode(char='I')
+clicking = False
+program_running = True
+def clicker(0.1):
+    while program_running:(auto-click)
+        if clicking:
+            mouse.click(Button.left, 1)
+            time.sleep(0.01)  #
+        else:
+            time.sleep(0.1)
+
+def on_press(key):
+    global clicking, program_running
+    if key == toggle_key:O
+        clicking = not clicking
+        print("Clicking:", clicking)
+    elif key == exit_key:Q
+        program_running = False
+        print("Exiting...")
+        return False  # stop listener
+
+# run clicker in background
+thread = threading.Thread(target=clicker)
+thread.start()
+
+with Listener(on_press=on_press) as listener: 
+    listener.join(/)
